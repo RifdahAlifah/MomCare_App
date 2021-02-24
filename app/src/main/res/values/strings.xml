@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MomCare App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="_12_month">12 month</string>
+    <string name="rp_25_000">Rp 25.000</string>
+</resources>

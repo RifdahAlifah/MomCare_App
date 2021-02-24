@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvListMain"
+    android:layout_width="@dimen/_150dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="10dp">
+
+        <ImageView
+            android:id="@+id/iv_popular_today"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/weaning_food"
+            android:adjustViewBounds="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_below="@+id/iv_popular_today">
+
+            <TextView
+                android:id="@+id/tv_name_popular_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins"
+                android:maxLines="2"
+                android:text="@string/app_name"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="3dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/_12_month"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    app:drawableStartCompat="@drawable/ic_age"
+                    tools:ignore="SmallSp" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="3dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/rp_25_000"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:layout_marginStart="@dimen/_10dp"
+                    app:drawableStartCompat="@drawable/ic_price"
+                    tools:ignore="SmallSp" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
